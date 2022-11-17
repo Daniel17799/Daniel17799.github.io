@@ -1,0 +1,255 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 22px;
+}
+body{
+    background: url(https://th.bing.com/th/id/R.856b4f4e0ba6b3c38fbb1641663539ba?rik=M0%2fGXo8LfZP1TQ&riu=http%3a%2f%2fgetwallpapers.com%2fwallpaper%2ffull%2f8%2fb%2f6%2f489485.jpg&ehk=BxJM6cNxv2QAEqsQynFxGl%2fH%2f74xWmcaDAtgLniuIH4%3d&risl=&pid=ImgRaw&r=0);
+    background-size: 200vh 100vh;
+    background-repeat: repeat-y;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.capa{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: rgba(29, 27, 27, 0.6);
+    z-index: -1;
+    top: 0;left: 0;
+}
+/*Estilos para el encabezado*/
+.header{
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    top: 0;left: 0;
+}
+.container{
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+.container .btn-menu, .logo{
+    float: left;
+    line-height:100px;
+}
+.container .btn-menu label{
+    color: #fff;
+    font-size: 25px;
+    cursor: pointer;
+}
+.logo h1{
+    color: #fff;
+    font-weight: 400;
+    font-size: 22px;
+    margin-left: 10px;
+}
+.container .menu{
+    float: right;
+    line-height: 100px;
+}
+.container .menu a{
+    display: inline-block;
+    padding: 15px;
+    line-height: normal;
+    text-decoration: none;
+    color: #fff;
+    transition: all 0.3s ease;
+    border-bottom: 2px solid transparent;
+    font-size: 15px;
+    margin-right: 5px;
+}
+.container .menu a:hover{
+    border-bottom: 2px solid #c7c7c7;
+    padding-bottom: 5px;
+}
+/*Fin de Estilos para el encabezado*/
+
+/*Menù lateral*/
+#btn-menu{
+    display: none;
+
+}
+.container-menu{
+    position: absolute;
+    background: rgba(0,0,0,0.5);
+    width: 100%;
+    height: 100vh;
+    top: 0;left: 0;
+    transition: all 500ms ease;
+    opacity: 0;
+    visibility: hidden;
+}
+#btn-menu:checked ~ .container-menu{
+    opacity: 1;
+    visibility: visible;
+
+}
+.cont-menu{
+    width: 100%;
+    max-width: 250px;
+    background: #1c1c1c;
+    height: 100vh;
+    position: relative;
+    transition: all 500ms ease;
+    transform: translateX(-100%);
+    position: fixed;
+}
+#btn-menu:checked ~ .container-menu .cont-menu{
+    transform: translateX(0%);
+}
+.cont-menu nav{
+    transform: translateY(15%);
+
+}
+
+.cont-menu nav a{
+    display: block;
+    text-decoration: none;
+    padding: 20px;
+    color: #c7c7c7;
+    border-left: 5px solid transparent;
+    transition: all 400ms ease;
+}
+.cont-menu nav a:hover{
+    border-left: 5px solid #c7c7c7;
+    background: #1f1f1f;
+}
+.cont-menu label{
+    position: absolute;
+    right: 5px;
+    top: 10px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+
+section  {
+    position: relative;
+    margin-left: 20vh;
+    display: flex;
+    flex-direction: column;
+    width: 100vh;
+    margin-top:100px;
+    color: #fff;
+    letter-spacing: 1px;
+    line-height: 23px;
+
+}
+.texto{
+    color: #fff;
+    position: relative;
+    width: 100vh;
+    margin-left: 20vh;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    letter-spacing: 2,5px;
+    line-height: 28px;
+
+
+}
+
+.a {
+    text-decoration: underline;
+    font-weight: 700;
+}
+.b {text-decoration: underline;
+    font-weight: 700;
+
+}
+
+.c {text-decoration: underline;
+    font-weight: 700;
+
+}
+.d {text-decoration: underline;
+    font-weight: 700;
+    
+}
+
+
+#Programación_imperativa {
+    display: flex;
+    margin-top: 20px;
+    color: #fff;
+    letter-spacing: 2px;
+    line-height: 25px;
+}
+
+#Programación_estructurada{
+    display: flex;
+    margin-top: 20px;
+    color: #fff;
+    letter-spacing: 2px;
+    line-height: 25px;
+}
+
+#Programación_procedimental{
+    display: flex;
+    margin-top: 20px;
+    color: #fff;
+    letter-spacing: 2px;
+    line-height: 25px;
+}
+
+#Programación_modular{
+    display: flex;
+    margin-top: 20px;
+    color: #fff;
+    letter-spacing: 2px;
+    line-height: 25px;
+}
+
+#Programación_funcional{
+    display: flex;
+    margin-top: 20px;
+    color: #fff;
+    letter-spacing: 2px;
+    line-height: 25px;
+}
+#Programación_declarativa{
+    display: flex;
+    margin-top: 20px;
+    color: #fff;
+    letter-spacing: 2px;
+    line-height: 25px;
+}
+
+#Programación_lógica{
+    display: flex;
+    margin-top: 20px;
+    color: #fff;
+    letter-spacing: 2px;
+    line-height: 25px;
+}
+.Conclusion {
+    display: flex;
+    width: 80vh;
+    flex-direction: column;
+    margin-top: 25px;
+    color: white;
+}
+
+footer {
+    display: flex;
+    justify-content: flex-end;
+    width: 100;
+    color: aliceblue;
+    margin-top: auto;
+    letter-spacing: 2px;
+    line-height: 25px;
+}
+
+.Referencias {
+    line-height: 25px;
+    display: flex;
+    flex-direction: column;
+    color:white;
+}
